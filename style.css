@@ -1,0 +1,228 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-video, #loading-gif {
+    max-width: 300px; 
+    max-height: 300px;
+    width: auto; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    display: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 9px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 35px 35px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ff4747;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+form h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+footer {
+   background-color: #900c3f;
+   color: #fff;
+   font-size: 0 9rem;
+   padding: 25px 35px;
+   width: 100%;
+   text-align: center;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   position: relative;
+   margin-top: 5rem;
+   left: -35px;
+   bottom: -60px;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.form-group2 {
+   margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group2 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group2 input,
+.form-group2 select,
+.form-group2 textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1.5px solid #ddd;
+   border-radius: 5px;
+   font-size: 1rem;
+   transition: all 0.3s ease;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff4747;
+    outline: none;
+}
+
+.form-group2 input:focus,
+.form-group2 select:focus,
+.form-group2 textarea:focus {
+    border-color: #ff4747;
+    outline: none;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea, 
+.form-group2 input, 
+.form-group2 select, 
+.form-group2 textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    appearance: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus, 
+.form-group2 input:focus, 
+.form-group2 select:focus, 
+.form-group2 textarea:focus {
+    border-color: #ff4747;
+    outline: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 24 24%22 fill%3D%22%23333%22%3E%3Cpath d%3D%22M7 10l5 5 5-5H7z%22/%3E%3C/svg%3E') no-repeat right 5px center;
+    background-color: #f4f4f4;
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+select:focus {
+    border-color: #ff4747;
+    outline: none;
+}
+
+.form-group2 select, 
+.form-group select {
+    background: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 24 24%22 fill%3D%22%23333%22%3E%3Cpath d%3D%22M7 10l5 5 5-5H7z%22/%3E%3C/svg%3E') no-repeat right 5px center;
+    background-color: #f4f4f4;
+    background-size: 20px;
+    padding-right: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #ff4747;
+    color: #fff;
+    float: left;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e03d3d;
+    transform: scale(1.07);
+}
+
+
+

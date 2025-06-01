@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran PMR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/pmr.png" type="image/x-icon">
+    <style>
+        input[type="number"] {
+            -moz-appearance: textfield; 
+            appearance: none;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="loading-screen">
+    <video autoplay loop muted id="loading-gif">
+        <source src="loading/loading.mp4" type="video/mp4">
+    </video>
+</div>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="Logo PMR" class="logo">
+            <h1>Daftar Jadi Wira PMR</h1>
+            <p> SMK Negeri 1 Padang Cermin</p>
+        </header>
+
+        <form id="pmrForm">
+            <h2>Isi Data Diri Anda</h2>
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Usia</label>
+                <input type="number" id="age" name="age" placeholder="Masukkan usia Anda" required>
+            </div>
+
+            <div class="form-group2">
+                <label for="class">Kelas</label>
+                <select id="class" name="class" required>
+                    <option value="">Pilih kelas</option>
+                    <option value="10 TKJ A">10 TKJ A</option>
+                    <option value="10 TKJ B">10 TKJ B</option>
+                    <option value="10 DKV A">10 DKV A</option>
+                    <option value="10 DKV B">10 DKV B</option>
+                    <option value="10 AKC">10 AKC</option>
+                    <option value="10 AK A">10 AK A</option>
+                    <option value="10 AK B">10 AK B</option>
+                    <option value="10 AK C">10 AK C</option>
+                    <option value="10 AP A">10 AP A</option>
+                    <option value="10 AP B">10 AP B</option>
+                    <option value="10 TBSM A">10 TBSM A</option>
+                    <option value="10 TBSM B">10 TBSM B</option>
+                    <option value="10 TBSM C">10 TBSM C</option>
+                </select>
+            </div>
+            <div class="form-group2">
+                <label for="gender">Jenis Kelamin</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Pilih jenis kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+            </div>
+            <h2>Alasan Masuk PMR</h2>
+            <div class="form-group">
+                <label for="experience">Tulis Di Sini ↓</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Tulis Alasan Anda Masuk PMR..." required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Kirim </button>
+            </div>
+           <footer>© 2025 PMR Skandamin. All rights reserved</footer>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
